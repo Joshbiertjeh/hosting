@@ -1,0 +1,249 @@
+body {
+	margin: 0;
+	padding: 0;
+  font-family: arial;
+}
+.logohead img {
+	width: 300px;
+	height: 125px;
+	z-index: 5;
+}
+.background img {
+	width: 100%;
+	z-index: -1;
+}
+/* header sectie */
+
+.topnav {
+	margin-top: -5px;
+	overflow: hidden;
+	background-color: #333;
+}
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.active {
+	background-color: #2251a3;
+	color: white;
+}
+.topnav .icon {
+	display: none;
+}
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+.dropdown .dropbtn {
+	font-size: 17px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #333;
+	color: #ffff;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+	float: none;
+	color: #ffff;
+  font-family: arial;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.topnav a:hover, .dropdown:hover .dropbtn {
+	background-color: #555;
+	color: white;
+}
+.dropdown-content a:hover {
+	background-color: #555;
+	color: #ffff;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+@media screen and (max-width: 600px) {
+	.topnav a:not(:first-child), .dropdown .dropbtn {
+		display: none;
+	}
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+}
+@media screen and (max-width: 600px) {
+	.topnav.responsive {
+		position: relative;
+	}
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.topnav.responsive .dropdown {
+		float: none;
+	}
+	.topnav.responsive .dropdown-content {
+		position: relative;
+	}
+	.topnav.responsive .dropdown .dropbtn {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+}
+/* Footer Section */
+
+.footer-joshua {
+	background-color: #313035;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+	margin-top: 0px;
+}
+.footer-joshua .footer-left, .footer-joshua .footer-midden, .footer-joshua .footer-rechts {
+	display: inline-block;
+	vertical-align: top;
+}
+.footer-joshua .footer-left {
+	width: 40%;
+}
+.footer-joshua h3 {
+	color: #ffffff;
+	font: normal 36px 'Berlin Sans FB Demi', cursive, ;
+	margin: 0;
+}
+.footer-joshua h3 span {
+	color: #5383d3;
+}
+.footer-joshua .footer-links {
+	color: #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+.footer-joshua .footer-links a {
+	display: inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color: inherit;
+}
+.footer-joshua .footer-bedrijf-naam {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-joshua .footer-midden {
+	width: 35%;
+}
+.footer-joshua .footer-midden i {
+	background-color: #ffff;
+	color: #2251a3;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.footer-joshua .footer-midden i:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #fff;
+}
+.footer-joshua .footer-midden i.fa-envelope {
+	font-size: 17px;
+	line-height: 38px;
+}
+.footer-joshua .footer-midden p {
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin: 0;
+}
+.footer-joshua .footer-midden p span {
+	display: block;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 2;
+}
+.footer-joshua .footer-midden p a {
+	color: #5383d3;
+	text-decoration: none;
+}
+.footer-joshua .footer-rechts {
+	width: 20%;
+}
+.footer-joshua .footer-company-about {
+	line-height: 20px;
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-joshua .footer-company-about span {
+	display: block;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.footer-joshua .footer-icons {
+	margin-top: 25px;
+}
+.footer-joshua .footer-icons a {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: #ffff;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #2251a3;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.footer-joshua .footer-icons a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #fff;
+}
+@media (max-width: 880px) {
+	.footer-joshua {
+		font: bold 14px sans-serif;
+	}
+	.footer-joshua .footer-left, .footer-joshua .footer-midden, .footer-joshua .footer-rechts {
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.footer-joshua .footer-midden i {
+		margin-left: 0;
+	}
