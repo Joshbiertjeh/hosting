@@ -13,6 +13,7 @@
 </head>
 <body>
 	<?php include "assets/include/header.php";?>
+	<div class="wrap">
 	<div class="row">
 <div class="col-75">
 <div class="container">
@@ -89,6 +90,7 @@
 </div>
 </div>
 </div>
+	</div>
 	<script>
 	function myFunction() {
 	   var x = document.getElementById("myTopnav");

@@ -23,7 +23,7 @@ img{max-width:100%;}
 /*end reset*/
 /****-----start-body----****/
 body{
-	background-color: #6b6c6d;
+	background-color: #2b2a2f;
 	    font-family: 'Lato', sans-serif;
 	    background-size: cover;
 	    -o-background-size: cover;
@@ -155,24 +155,24 @@ border-radius: 0.7em;
 	list-style: none;
 }
 .price-value  h5 span{
-color: #2251a3;
+color: RED;
 font-size: 19px;
 }
 .price-value lable{
-color: white;
+color: RED;
 font-size: 17px;
 }
 .price-value.two h5 span{
-	color: #2251a3;
+	color: RED;
 }
 .price-value.two h5 lable{
-	color: white;
+	color: RED;
 }
 .price-value.three h5 span{
-	color: #2251a3;
+	color: RED;
 }
 .price-value.three h5 lable{
-	color: white;
+	color: RED;
 }
 .price-value h5 {
 padding: 11px 0;

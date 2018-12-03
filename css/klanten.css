@@ -1,0 +1,29 @@
+body {
+  background-color: #2b2a2f;
+}
+#klanten {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+#klanten td, #klanten th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#klanten tr:nth-child(even){background-color: #ffff;}
+
+#klanten tr:nth-child(odd){background-color: #f4f4f4;}
+
+#klanten tr:hover {background-color: #ddd;}
+
+#klanten th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2251a3;
+    color: white;
+}

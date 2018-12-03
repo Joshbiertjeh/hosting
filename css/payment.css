@@ -2,10 +2,16 @@ body {
   font-family: Arial;
   font-size: 17px;
   padding: 8px;
+  background-color: #2b2a2f;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .row {

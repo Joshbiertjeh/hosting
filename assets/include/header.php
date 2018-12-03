@@ -12,8 +12,18 @@
 </head>
 <body>
 	<!-- Begin header -->
+	<script>
+	function myFunction() {
+	   var x = document.getElementById("myTopnav");
+	   if (x.className === "topnav") {
+	       x.className += " responsive";
+	   } else {
+	       x.className = "topnav";
+	   }
+	}
+	</script>
 	<div class="background">
-	<img src="img/achtergrond.jpg">
+	<img src="img/achtergrond.jpg" style="z-index:-1;">
 	</div>
 	<div class="topnav" id="myTopnav">
 		<a class="active" href="index.php">Home</a>
@@ -29,6 +39,8 @@
 				<a href="cloud.php">Cloudpakketten</a>
 			</div>
 		</div><a href="contact.php">Contact</a> <a href="klanten.php">Klanten</a> <a href="social.php">Social</a> <a href="foto.php">Foto`s</a> <a class="icon" href="javascript:void(0);" onclick="myFunction()" style="font-size:15px;">&#9776;</a>
+		<div class="right"><a href="#"><i class="fa fa-shopping-cart"> Cart</i></a></div>
 	</div>
+	<script type="text/javascript" id="cookieinfo" src="https://cookieinfoscript.com/js/cookieinfo.min.js" data-bg="black" data-fg="#FFFFFF" data-link="#F1D600" data-cookie="CookieInfoScript" data-text-align="left" data-close-text="Got it!"></script>
 </body>
 </html>

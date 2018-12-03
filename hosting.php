@@ -13,21 +13,37 @@
 	<?php include "assets/include/header.php";?>
 	<!-- pricing table -->
 	<script>
-	                       $(document).ready(function() {
-	                       $('.popup-with-zoom-anim').magnificPopup({
-	                           type: 'inline',
-	                           fixedContentPos: false,
-	                           fixedBgPos: true,
-	                           overflowY: 'auto',
-	                           closeBtnInside: true,
-	                           preloader: false,
-	                           midClick: true,
-	                           removalDelay: 300,
-	                           mainClass: 'my-mfp-zoom-in'
-	                       });
+												 function test(e){
+													 alert(document.getElementById("selectList").value);
+													 if (document.getElementById("selectList").value==="Brons"){
+														document.getElementById("p1").value = 5.95;
+														document.getElementById("t1").innerHTML = "1 month $5.95";
+														document.getElementById("p3").value = 357.00;
+														document.getElementById("t3").innerHTML = "5 years $357.00";
+														document.getElementById("p2").value = 71.40;
+ 													 document.getElementById("t2").innerHTML = "1 year $71.40";
+													}
+												if (document.getElementById("selectList").value==="Silver"){
+												 document.getElementById("p1").value = 7.95;
+												 document.getElementById("t1").innerHTML = "1 month $7.95";
+												 document.getElementById("p3").value = 477.00;
+												 document.getElementById("t3").innerHTML = "5 years $477.00";
+												 document.getElementById("p2").value = 95.40;
+ 												document.getElementById("t2").innerHTML = "1 year $95.40";
+											 }
+										 if (document.getElementById("selectList").value==="Goud"){
+											document.getElementById("p1").value = 10.95;
+											document.getElementById("t1").innerHTML = "1 month $10.95";
+											document.getElementById("p3").value = 657.00 - document.getElementById("discount").innerHTML;
+											document.getElementById("t3").innerHTML = "5 years $657.00";
+											document.getElementById("p2").value = 131.40;
+ 										 document.getElementById("t2").innerHTML = "1 year $131.40";
+										}
+									}
 
-	                       });
 	</script>
+	<div id="discount" style="display:none;">6</div>
+
 	<div class="pricing-plans">
 		<div class="wrap">
 			<div class="pricing-grids">
@@ -58,7 +74,7 @@
 							</li>
 						</ul>
 						<div class="cart1">
-							<a class="popup-with-zoom-anim" href="payment.php">Betaal nu</a>
+							<a class="popup-with-zoom-anim" href="payment.php">Add to cart</a>
 						</div>
 					</div>
 				</div>
@@ -89,7 +105,7 @@
 							</li>
 						</ul>
 						<div class="cart2">
-							<a class="popup-with-zoom-anim" href="payment.php">Betaal nu</a>
+							<a class="popup-with-zoom-anim" href="payment.php">Add to cart</a>
 						</div>
 					</div>
 				</div>
@@ -120,11 +136,42 @@
 							</li>
 						</ul>
 						<div class="cart3">
-							<a class="popup-with-zoom-anim" href="payment.php">Betaal nu</a>
+							<a class="popup-with-zoom-anim" href="payment.php">Add to cart</a>
 						</div>
 					</div>
 				</div>
-				<div class="clear"></div></div></div>
+				<div class="clear"></div></div>
+				<form id="Brons" style="text-align:center;">
+					<select id="selectList" onchange="test()">
+ 					 	<option id="Brons" value="Brons">Brons</option>
+ 						<option id="Silver" value="Silver">Silver</option>
+ 						<option id="Goud" value="Goud">Goud</option>
+ 					</select>
+					<fieldset>
+					<label>
+							<input name="product" value="5.95" type="checkbox" id="p1" onclick="totalIt()"/>
+							<p id="t1" style="color:white;">1 month $5.95</p>
+							 <input name="product" value="71.40" type="checkbox" id="p2" onclick="totalIt()"/>
+							 <p id="t2" style="color:white;">1 year $71.40</p>
+							 <input name="product" value="357.00" type="checkbox" id="p3" onclick="totalIt()"/>
+							 <p id="t3" style="color:white;">5 years $357.00</p>
+							 <input style="margin-top:10px;" value="$0.00" readonly="readonly" type="text" id="total"/>
+					 </label>
+			 </fieldset>
+	 </form>
+	 <script>
+	 function totalIt() {
+  var input = document.getElementsByName("product");
+  var total = 0;
+  for (var i = 0; i < input.length; i++) {
+    if (input[i].checked) {
+      total += parseFloat(input[i].value);
+    }
+  }
+  document.getElementById("total").value = "$" + total.toFixed(2);
+}
+</script>
+	 </div>
 			<footer><?php include "assets/include/footer.php";?></footer>
 </body>
 </html>
